@@ -1444,3 +1444,74 @@ li {
   margin-top: 40px;
   color: #838485;
 }
+
+.stadistics-box-wrapper.box-grad {
+  height: auto;
+  padding: 12px 20px;
+  background: linear-gradient(to right, rgb(0 147 238 / 88%), rgb(39 217 116 / 47%));
+  color: #fff;
+  border: 1px solid #fff; 
+  border-radius: .25rem;
+}
+
+.box-grad .chart-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.box-grad .chart-wrapper h3 {
+  color: inherit;
+  font-weight: 300;
+}
+
+.box-grad .chart-wrapper .col {
+  padding: 0;
+  flex-grow: 0;
+}
+
+.box-grad .chart-wrapper .col-left {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.box-grad .chart-wrapper .col-mid {
+  flex-grow: 1;
+  padding: 0 10%;
+  align-self: center;;
+}
+.box-grad .chart-wrapper .col-right{
+  flex-grow: 1;
+  text-align: right;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.chart-wrapper .info-box:first-child {
+  margin-bottom: 15px;
+}
+
+.chart-wrapper .info-box .box-title{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.chart-wrapper .info-box .box-title img {
+  width: 11px;
+}
+
+.chart-wrapper .info-box .box-text {
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  margin: -2px 0 0 0;
+}
+
+@media only screen and (max-width: 360px){
+  .box-grad .chart-wrapper { display: block; }
+  .box-grad .chart-wrapper .col-right { text-align: left; }
+  .box-grad .chart-wrapper .col-mid { padding: 15px 0; }
+  .box-grad .chart-wrapper .col-mid img { height: 60px; width: auto;  }
+}
+
